@@ -1,0 +1,18 @@
+# Maven
+target/
+*.log
+
+# Reports (DO NOT COMMIT)
+Reports/
+test-output/
+playwright-report/
+
+# IDE
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# OS
+.DS_Store
