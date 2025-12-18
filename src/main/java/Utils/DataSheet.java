@@ -2,14 +2,11 @@ package Utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
 public class DataSheet {
-	
 	public String DataImport(int row,int Cell) throws IOException {
 	
 String path = System.getProperty("user.dir")
@@ -23,8 +20,6 @@ String path = System.getProperty("user.dir")
 		String cellValue = row1.getCell(Cell).toString();
 
 		return cellValue;
-	}
-
-	
+	}	
 }
 }
