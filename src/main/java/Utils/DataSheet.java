@@ -12,7 +12,10 @@ public class DataSheet {
 	
 	public String DataImport(int row,int Cell) throws IOException {
 	
-	String path="C:\\Users\\user\\eclipse-workspace\\PlaywrightAssignment\\src\\test\\resources\\testdata\\TestLoginData.xlsx";
+	String path = getClass()
+        .getClassLoader()
+        .getResource("testdata/TestLoginData.xlsx")
+        .getPath();
 	FileInputStream fis = new FileInputStream(path);
 
 	try (XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
