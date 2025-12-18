@@ -10,7 +10,7 @@ public class PlaywrightFactory {
 	      
 		public static Page getPage() {
 	        playwright = Playwright.create();
-	        browser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setChannel("chrome")));
+	        browser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true).setChannel("chrome")));
 	        page.set(browser.get().newContext().newPage());
 	        return page.get();
 	    }
